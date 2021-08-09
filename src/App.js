@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "antd/dist/antd.css";
+import "./App.css";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
+import Header from "./components/Header";
+import { Layout, Menu, Breadcrumb } from "antd";
+import "./index.css";
+import MainSection from "./components/MainSection";
+import Banner from "./components/Banner";
+import ApiMainSection from "./components/ApiMainSection";
+import ApiCards from "./components/ApiCards";
+import ApiSection from "./components/ApiSection";
+import ApiTabs from "./components/ApiTabs";
+import SlideDrawer from "./components/SlideDrawer";
+import Home from "./layouts/Home";
+import Dev from "./layouts/Dev";
+import Api from "./layouts/Api";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/dev" component={Dev}></Route>
+          <Route exact path="/api" component={Api}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
