@@ -8,18 +8,36 @@ import Dev from "./layouts/Dev";
 import Api from "./layouts/Api";
 import Header from "./components/Header";
 
-function App() {
+const Wrapper = ({ component: C }) => {
   return (
     <Layout className="layout">
       <Header />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/dev" component={Dev}></Route>
-          <Route exact path="/api" component={Api}></Route>
-        </Switch>
-      </Router>
+      <C />
     </Layout>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => <Wrapper component={Home} />}
+        ></Route>
+        <Route
+          exact
+          path="/dev"
+          render={() => <Wrapper component={Dev} />}
+        ></Route>
+        <Route
+          exact
+          path="/api"
+          render={() => <Wrapper component={Api} />}
+        ></Route>
+      </Switch>
+    </Router>
   );
 }
 
