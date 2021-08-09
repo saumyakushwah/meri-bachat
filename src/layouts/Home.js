@@ -5,10 +5,9 @@ import MainSection from "../components/MainSection";
 
 export default function Home() {
   return (
-    <Layout className="layout">
-      <Header />
+    <>
       <MainSection />
       <Banner />
-    </Layout>
+    </>
   );
 }

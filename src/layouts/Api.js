@@ -5,10 +5,9 @@ import Header from "../components/Header";
 
 export default function Api() {
   return (
-    <Layout className="layout">
-      <Header />
+    <>
       <ApiSection />
       <ApiTabs />
-    </Layout>
+    </>
   );
 }

@@ -5,8 +5,7 @@ import Header from "../components/Header";
 
 export default function Dev() {
   return (
-    <Layout className="layout">
-      <Header />
+    <>
       <ApiMainSection />
       <div
         style={{
@@ -21,6 +20,6 @@ export default function Dev() {
         <ApiCards />
         <ApiCards />
       </div>
-    </Layout>
+    </>
   );
 }
