@@ -4,9 +4,9 @@ const { Title } = Typography;
 
 export default function Banner() {
   return (
-    <Row style={{ height: "300px" }} justify="space-around" align="middle">
-      <Col span={4}></Col>
-      <Col span={6}>
+    <Row className="tool-section" justify="space-around" align="middle">
+      <Col xs={{ span: 24 }} sm={{ span: 4 }}></Col>
+      <Col xs={{ span: 18 }} sm={{ span: 6 }}>
         <Row justify="space-around" align="middle">
           <Col>
             <Title className="banner-heading">Developer Tools</Title>
@@ -17,8 +17,8 @@ export default function Banner() {
           </Col>
         </Row>
       </Col>
-      <Col span={2}></Col>
-      <Col span={8}>
+      <Col xs={{ span: 24 }} sm={{ span: 1 }}></Col>
+      <Col xs={{ span: 20 }} sm={{ span: 9 }}>
         <br />
         <Row justify="space-around">
           <Col span={6}>
@@ -26,8 +26,9 @@ export default function Banner() {
               src="/RIC.png"
               alt=""
               width="100%"
-              style={{ objectFit: "contain" }}
-              height={75}
+              // style={{ objectFit: "contain" }}
+              // height={75}
+              className="tool-image"
             />
             <Title level={5} className="tools-title">
               RIC Search
@@ -38,8 +39,9 @@ export default function Banner() {
               src="/discovery.png"
               alt=""
               width="100%"
-              style={{ objectFit: "contain" }}
-              height={75}
+              className="tool-image"
+              // style={{ objectFit: "contain" }}
+              // height={75}
             />
             <Title level={5} className="tools-title">
               Data Model
@@ -52,8 +54,9 @@ export default function Banner() {
               src="/explore-tool.png"
               alt=""
               width="100%"
-              style={{ objectFit: "contain" }}
-              height={75}
+              className="tool-image"
+              // style={{ objectFit: "contain" }}
+              // height={75}
             />
             <Title level={5} className="tools-title">
               Data Exploration
@@ -74,7 +77,7 @@ export default function Banner() {
           </div>
         </div> */}
       </Col>
-      <Col span={4}></Col>
+      <Col xs={{ span: 24 }} sm={{ span: 4 }}></Col>
     </Row>
     // <div className="banner">
     // {/* <Row>

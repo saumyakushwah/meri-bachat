@@ -17,7 +17,7 @@ code {
   height: auto !important;
   line-height: 100px !important;
   border-bottom: 1px solid #e5e5e5;
-  padding: 48px 48px 0 !important;
+  padding: 48px 100px 0 !important;
   width: 100%;
   justify-content: space-between !important;
   /* height: 100px !important; */
@@ -79,7 +79,7 @@ code {
 
 .search-bar {
   width: 330px;
-  margin-right: 64px;
+  margin-right: 24px;
 }
 
 .backdrop {
@@ -125,7 +125,7 @@ code {
 
 .ant-dropdown-link {
   /* padding: 0 16px; */
-  margin-right: 40px;
+  margin-left: 40px;
   color: #495057;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -137,7 +137,7 @@ code {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 60px 0 40px;
+  /* margin: 0 60px 0 40px; */
   position: relative;
 }
 
@@ -147,12 +147,16 @@ code {
 }
 
 .left-section {
-  margin: 130px 0 0 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 130px 0 0 140px; */
 }
 
-.right-section {
+/* .right-section {
   margin: 30px 100px 0 0;
-}
+} */
 
 .banner {
   background-color: #f5f5f5;
@@ -312,3 +316,111 @@ code {
 /* .ant-drawer-content-wrapper {
   transform: translateY(90%) !important;
 } */
+
+.blank-space {
+  height: 149px;
+}
+
+.logo {
+  width: 200px;
+  /* height: 40px; */
+  object-fit: contain;
+  object-position: center;
+  /* display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  objectFit: "contain", */
+}
+
+.main-image {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.main-input {
+  width: 380px;
+  height: 50px;
+  border-radius: 24px;
+  margin: 20px 0 0 0;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: black;
+  font-size: 24px;
+  padding: 24px;
+}
+
+.container-div {
+  width: 400px;
+}
+
+.tool-image {
+  height: 75px;
+  object-fit: contain;
+}
+
+.tool-section {
+  height: 300px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .ant-layout-header {
+    padding: 0 12px 0 !important;
+    line-height: 52px !important;
+  }
+  .blank-space {
+    height: 53px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .backdrop {
+    opacity: 0;
+  }
+  .search-bar {
+    display: none;
+  }
+  .ant-dropdown-link {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  h1.ant-typography,
+  .ant-typography h1 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 22px !important;
+  }
+  h5.ant-typography,
+  .ant-typography h5 {
+    margin-top: 16px !important;
+    font-size: 16px !important;
+  }
+  .main-input {
+    width: 280px;
+    height: 36px;
+    border-radius: 24px;
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    padding: 16px;
+  }
+  .main-image {
+    height: 250px;
+  }
+
+  .container-div {
+    width: 100%;
+  }
+
+  .tool-image {
+    height: 60px;
+    object-fit: contain;
+  }
+  h5.ant-typography,
+  .ant-typography h5.tool-title {
+    font-size: 12px !important;
+  }
+  .tool-section {
+    height: 340px !important;
+  }
+}

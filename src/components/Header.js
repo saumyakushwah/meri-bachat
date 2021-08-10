@@ -16,11 +16,11 @@ export default function Header() {
 
   switch (active) {
     case 0:
-      right = 426;
+      right = 386;
       width = 329;
       break;
     case 1:
-      right = 306;
+      right = 266;
       width = 74;
       break;
     default:
@@ -46,18 +46,7 @@ export default function Header() {
       >
         {/* <div>HI</div> */}
         <Link to="/">
-          <img
-            src="/MB_logo.png"
-            alt="logo"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              objectFit: "contain",
-            }}
-            width={300}
-            height={40}
-          />
+          <img className="logo" src="/MB_logo.png" alt="logo" />
         </Link>
         {/* <SearchOutlined
         style={{
@@ -99,7 +88,7 @@ export default function Header() {
           ></div>
         </div>
       </AntHeader>
-      <div style={{ height: "149px" }}></div>
+      <div className="blank-space" />
     </>
   );
 }
